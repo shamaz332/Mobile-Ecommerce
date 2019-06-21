@@ -45,7 +45,7 @@ export default class App extends Component {
         <nav >
     <div class="nav-wrapper teal lighten-1" >
       <a  class="brand-logo" style={{marginLeft:'40px'}}><Link to={'/'}>Mobily</Link></a>
-      <a data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
       <ul class="right hide-on-med-and-down">
         <li ><Link to={'/'}>Home</Link></li>
         <li><Link to={'/contact'}>Contact Us</Link></li>
