@@ -4,6 +4,6 @@
 }
 
 .carousel .slide img {
-    max-height: 1000px;  /* change this to whatever you want */
-    width:auto;
+    max-height:500px;  /* change this to whatever you want */
+    width:100%;
 }

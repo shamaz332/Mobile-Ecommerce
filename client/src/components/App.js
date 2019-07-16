@@ -42,7 +42,7 @@ export default class App extends Component {
 <div class="navbar-fixed">
       <nav >
    <div class="nav-wrapper teal lighten-1" >
-       <a  class="brand-logo" style={{marginLeft:'40px'}}><Link to={'/'}>Mobily</Link></a>
+       <a  class="brand-logo" style={{marginLeft:'40px'}}><Link to={'/'}><img style={{height:'60px'}}src="https://www.freelogodesign.org/file/app/client/thumb/5cc07f4b-8738-4217-a73c-2b1e3c5151b8_200x200.png?1563292458664"></img>Mobily </Link></a>
        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
        <ul class="right hide-on-med-and-down" style={{ listStyleType:'none'}}>
          <li ><Link to={'/'}>Home</Link></li>
