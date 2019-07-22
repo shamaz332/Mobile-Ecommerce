@@ -6,10 +6,10 @@ import Footer from './pages/footer';
 import { BrowserRouter as Router, Route,Switch,Link } from "react-router-dom";
 import 'materialize-css/dist/css/materialize.min.css'
 import M from 'materialize-css'
-import MenuAppBar from './pages/Navbar';
-import * as jwt_decode from 'jwt-decode';
-import setAuthToken from "../utils/setAuthToken";
-import { setCurrentUser, logoutUser } from "../redux/action/authActions";
+// import MenuAppBar from './pages/Navbar';
+// import * as jwt_decode from 'jwt-decode';
+// import setAuthToken from "../utils/setAuthToken";
+// import { setCurrentUser, logoutUser } from "../redux/action/authActions";
 
 // // Check for token to keep user logged in
 // if (localStorage.jwtToken) {
@@ -39,12 +39,12 @@ export default class App extends Component {
             <Provider store={store}>
 <Router>
     <div>
-<div class="navbar-fixed">
+<div className="navbar-fixed">
       <nav >
-   <div class="nav-wrapper teal lighten-1" >
-       <a  class="brand-logo" style={{marginLeft:'40px'}}><Link to={'/'}><img style={{height:'60px'}}src="https://www.freelogodesign.org/file/app/client/thumb/5cc07f4b-8738-4217-a73c-2b1e3c5151b8_200x200.png?1563292458664"></img>Mobily </Link></a>
-       <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-       <ul class="right hide-on-med-and-down" style={{ listStyleType:'none'}}>
+   <div className="nav-wrapper teal lighten-1" >
+       <a  className="brand-logo" style={{marginLeft:'40px'}}><Link to={'/'}><img style={{height:'60px'}}src="https://www.freelogodesign.org/file/app/client/thumb/5cc07f4b-8738-4217-a73c-2b1e3c5151b8_200x200.png?1563292458664"></img>Mobily </Link></a>
+       <a href="#" data-target="mobile-demo" className="sidenav-trigger"><i className="material-icons">menu</i></a>
+       <ul className="right hide-on-med-and-down" style={{ listStyleType:'none'}}>
          <li ><Link to={'/'}>Home</Link></li>
          <li><Link to={'/contact'}>Contact Us</Link></li>
          <li><Link to={'/about'}>About</Link></li>
@@ -57,7 +57,7 @@ export default class App extends Component {
      </div>
    </nav> 
    </div>
-    <ul class="sidenav" id="mobile-demo">
+    <ul className="sidenav" id="mobile-demo">
    <li ><Link to={'/'}>Home</Link></li>
          <li><Link to={'/contact'}>Contact Us</Link></li>
          <li><Link to={'/about'}>About</Link></li>

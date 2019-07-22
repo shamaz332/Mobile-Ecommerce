@@ -1,5 +1,3 @@
-"use strict"
-
 // CART REDUCERS
 export default function cartReducers(state={cart: []}, action) {
   switch(action.type) {
@@ -9,14 +7,14 @@ export default function cartReducers(state={cart: []}, action) {
           totalAmount:totals(action.payload).amount,
           totalQty: totals(action.payload).qty
         }
-        break;
+    
         case "ADD_TO_CART":
            return {...state,
              cart:action.payload,
              totalAmount: totals(action.payload).amount,
              totalQty: totals(action.payload).qty
            }
-           break;
+    
     case "UPDATE_CART":
 
     return {...state,
@@ -24,14 +22,13 @@ export default function cartReducers(state={cart: []}, action) {
       totalAmount: totals(action.payload).amount,
       totalQty: totals(action.payload).qty
     }
-    break;
-    case "DELETE_CART_ITEM":
+        case "DELETE_CART_ITEM":
     return {...state,
       cart: action.payload,
       totalAmount: totals(action.payload).amount,
       totalQty: totals(action.payload).qty
     }
-    break;
+ 
   }
   return state
 }

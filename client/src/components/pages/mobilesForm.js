@@ -7,7 +7,7 @@ import 'materialize-css/dist/css/materialize.min.css';
 import M from 'materialize-css/dist/js/materialize.min.js'
 
 // import { logoutUser } from "../../redux/action/authActions";
-import PropTypes from "prop-types";
+
 import axios from 'axios';
 
 class MobilesForm extends Component {

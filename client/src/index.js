@@ -1,8 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './components/App';
-
-import { BrowserRouter } from 'react-router-dom'
 //import { Route, Link, BrowserRouter as Router } from 'react-router-dom'
 //We import the configure store function that handles creating the store for us.
 

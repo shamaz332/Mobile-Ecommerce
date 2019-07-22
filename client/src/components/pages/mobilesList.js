@@ -7,7 +7,7 @@ import './styles/carousel.css'
 import {getMobiles} from '../../redux/action/mobilesAction';
 
 import MobileItem from './mobileItem';
-import Cart from './cart';
+
 
 
 class MobilesList extends Component{
@@ -36,37 +36,37 @@ class MobilesList extends Component{
 <div className='row'>
 <Carousel showThumbs={false} infiniteLoop={true} autoPlay={true}>
 <div>
-            <img src="https://images.wallpaperscraft.com/image/samsung_galaxy_logo_105553_1280x1024.jpg" />
+            <img src="https://images.wallpaperscraft.com/image/samsung_galaxy_logo_105553_1280x1024.jpg" alt="mobile" />
             <p className="legend">Samsung</p>
             </div>
             <div>
-            <img src="http://desktop-backgrounds-org.s3.amazonaws.com/1280x1024/apple-iphone-5s-cell-phone_3.jpg" />
+            <img src="http://desktop-backgrounds-org.s3.amazonaws.com/1280x1024/apple-iphone-5s-cell-phone_3.jpg" alt="mobile"/>
                     <p className="legend">Apple</p>
             </div>
             <div>
-            <img src="https://cdn.vox-cdn.com/thumbor/nWjiPR-hSCy1_WXvFxr6pAjZYYY=/0x0:2040x1360/1200x800/filters:focal(857x517:1183x843)/cdn.vox-cdn.com/uploads/chorus_image/image/61520647/jbareham_180424_2499_0007.0.jpg" />
+            <img src="https://cdn.vox-cdn.com/thumbor/nWjiPR-hSCy1_WXvFxr6pAjZYYY=/0x0:2040x1360/1200x800/filters:focal(857x517:1183x843)/cdn.vox-cdn.com/uploads/chorus_image/image/61520647/jbareham_180424_2499_0007.0.jpg"alt="mobile" />
             <p className="legend">Apple</p>
             </div>
             <div>
-            <img src="http://desktop-backgrounds-org.s3.amazonaws.com/1280x1024/huawei-honor-6-cell-phone_0.jpg" />
+            <img src="http://desktop-backgrounds-org.s3.amazonaws.com/1280x1024/huawei-honor-6-cell-phone_0.jpg"alt="mobile"/>
                     <p className="legend">Huawai</p>
                     
             </div>
             <div>
-            <img src="https://images.wallpaperscraft.com/image/lg_mobile_phones_brand_communications_26175_1280x1024.jpg" />
+            <img src="https://images.wallpaperscraft.com/image/lg_mobile_phones_brand_communications_26175_1280x1024.jpg"alt="mobile" />
 
                     <p className="legend">LG</p>
             </div>
             <div>
-            <img src="https://www.notebookcheck.net/uploads/tx_nbc2/LenovoVibeK5Note__1_.jpg" />
+            <img src="https://www.notebookcheck.net/uploads/tx_nbc2/LenovoVibeK5Note__1_.jpg" alt="mobile"/>
                     <p className="legend">Lenovo</p>
             </div>
             <div>
-            <img src="https://my-test-11.slatic.net/p/dd9e4898f2d7cdd7da2bbe9744ff0fe6.jpg" />
+            <img src="https://my-test-11.slatic.net/p/dd9e4898f2d7cdd7da2bbe9744ff0fe6.jpg" alt="mobile"/>
                     <p className="legend">VIVO</p>
             </div>
             <div>
-            <img src="https://images.wallpaperscraft.com/image/motorola_moto_x_style_smartfon_103677_1280x1024.jpg" />
+            <img src="https://images.wallpaperscraft.com/image/motorola_moto_x_style_smartfon_103677_1280x1024.jpg" alt="mobile"/>
                     <p className="legend">Matrola</p>
             </div>
            

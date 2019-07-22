@@ -1,4 +1,3 @@
-"use strict"
 //MobileS REDUCERS
 export default function mobilesReducers(state={
   mobiles:[]
@@ -8,17 +7,16 @@ export default function mobilesReducers(state={
     // let mobiles = state.mobiles.concat(action.payload);
     // return {mobiles};
     return {...state, mobiles:[...action.payload]}
-    break;
+
     case "POST_MOBILE":
     return {...state, mobiles:[...state.mobiles, ...action.payload], msg:'Saved! Click to continue'}
-    break;
+    
     case "POST_MOBILE_REJECTED":
     return {...state, msg:'Please, try again'}
-    break;
+  
     case "RESET_BUTTON":
     return {...state, msg:null}
-    break;
-    case "DELETE_MOBILE":
+        case "DELETE_MOBILE":
     // Create a copy of the current array of mobiles
     const currentMobileToDelete = [...state.mobiles]
     // Determine at which index in mobiles array is the mobile to be deleted

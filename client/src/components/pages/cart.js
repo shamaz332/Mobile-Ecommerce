@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import {connect} from 'react-redux';
 import {bindActionCreators} from 'redux';
-import M from "materialize-css";
+
 import 'materialize-css';
 import PropTypes from "prop-types";
 // import Dialog from 'material-ui/Dialog';
