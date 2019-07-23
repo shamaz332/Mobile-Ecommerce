@@ -68,7 +68,7 @@ class MobileItem extends Component{
     <h6><strong>Internal Memory : </strong>{this.props.internalmemory}</h6>
     <h6><strong>Color : </strong>{this.props.color}</h6>
       
-            <h6>$ {this.props.price}</h6>
+            <h6>Price : $ {this.props.price}</h6>
             <button class="btn waves-effect waves-light" onClick={this.handleCart.bind(this)}>Add To Cart
     <i class="material-icons right">send</i>
   </button>
