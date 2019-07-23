@@ -2,7 +2,7 @@ import axios from 'axios';
 // ADD TO CART
 export function addToCart(cart){
     return function(dispatch){
-      axios.post("http://localhost:3001/cart", cart)
+      axios.post("/cart", cart)
         .then(function(response){
           dispatch({type:"ADD_TO_CART", payload:response.data})
         })
@@ -15,7 +15,7 @@ export function addToCart(cart){
 // DELETE FROM CART
 export function deleteCartItem(cart){
     return function(dispatch){
-      axios.post("http://localhost:3001/cart", cart)
+      axios.post("/cart", cart)
         .then(function(response){
           dispatch({type:"DELETE_CART_ITEM", payload:response.data})
         })
@@ -43,7 +43,7 @@ export function updateCart(_id, unit, cart){
     let cartUpdate = [...currentMobileToUpdate.slice(0, indexToUpdate), newMobileToUpdate, ...currentMobileToUpdate.slice(indexToUpdate + 1)]
   
     return function(dispatch){
-      axios.post("http://localhost:3001/cart", cartUpdate)
+      axios.post("/cart", cartUpdate)
         .then(function(response){
           dispatch({type:"UPDATE_CART", payload:response.data})
         })
@@ -54,7 +54,7 @@ export function updateCart(_id, unit, cart){
   }
   export function getCart(){
     return function(dispatch){
-      axios.get('http://localhost:3001/cart')
+      axios.get('/cart')
        .then(function(response){
          dispatch({type:"GET_CART", payload:response.data})
        })

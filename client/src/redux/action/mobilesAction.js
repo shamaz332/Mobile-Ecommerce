@@ -2,7 +2,7 @@ import axios from 'axios';
 
 export function getMobiles(){
   return function(dispatch){
-    axios.get("http://localhost:3001/mobiles")
+    axios.get("/mobiles")
       .then(function(response){
         dispatch({type:"GET_MOBILES", payload:response.data})
       })
@@ -14,7 +14,7 @@ export function getMobiles(){
 
 export function postMobiles(mobile){
   return function(dispatch){
-    axios.post("http://localhost:3001/mobiles", mobile)
+    axios.post("/mobiles", mobile)
       .then(function(response){
         dispatch({type:"POST_MOBILE", payload:response.data})
       })
@@ -29,7 +29,7 @@ export function deleteMobiles(_id){
   return function(dispatch){
      console.log("Logging ID here ");
      console.log(_id);
-    axios.delete("http://localhost:3001/mobiles/" + _id)
+    axios.delete("/mobiles/" + _id)
       .then(function(response){
         dispatch({type:"DELETE_MOBILE", payload:_id})
       })
