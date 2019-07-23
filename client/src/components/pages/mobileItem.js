@@ -59,7 +59,7 @@ class MobileItem extends Component{
           <div class="card-content">
     <div className='row'>
     <div className="col s4 xs12">
-    <img src={this.props.images} className="responsive-img"/> 
+    <img src='https://www.91-img.com/pictures/128557-v5-honor-9n-mobile-phone-large-1.jpg' className="responsive-img"/> 
     </div>
     <div className="col s8">
     <h6><strong>Model : </strong>{this.props.model}</h6>

@@ -4,6 +4,7 @@ import store from '../redux/store/index'
 import SwitchNav from './pages/SwitchNav';
 import Footer from './pages/footer';
 import { BrowserRouter as Router, Route,Switch,Link } from "react-router-dom";
+import './styles.css'
 import 'materialize-css/dist/css/materialize.min.css'
 import M from 'materialize-css'
 // import MenuAppBar from './pages/Navbar';
@@ -42,10 +43,10 @@ export default class App extends Component {
 <div className="navbar-fixed">
       <nav >
    <div className="nav-wrapper teal lighten-1" >
-       <a  className="brand-logo" style={{marginLeft:'40px'}}><Link to={'/'}><img style={{height:'60px'}}src="https://www.freelogodesign.org/file/app/client/thumb/5cc07f4b-8738-4217-a73c-2b1e3c5151b8_200x200.png?1563292458664"></img>Mobily </Link></a>
+       <a  className="brand-logo" style={{marginLeft:'10px'}}><Link to={'/'}><img style={{height:'60px'}}src="https://www.freelogodesign.org/file/app/client/thumb/5cc07f4b-8738-4217-a73c-2b1e3c5151b8_200x200.png?1563292458664"></img>Mobily </Link></a>
        <a href="#" data-target="mobile-demo" className="sidenav-trigger"><i className="material-icons">menu</i></a>
        <ul className="right hide-on-med-and-down" style={{ listStyleType:'none'}}>
-         <li ><Link to={'/'}>Home</Link></li>
+         <li style={{textDecoration:'none !important'}}><Link to={'/'}>Home</Link></li>
          <li><Link to={'/contact'}>Contact Us</Link></li>
          <li><Link to={'/about'}>About</Link></li>
          <li><Link to={'/cart'}>Cart</Link></li>

@@ -17,11 +17,12 @@ class MobilesList extends Component{
   render(){
     const mobilesList = this.props.mobiles.map(function(mobilesArr){
       return(
-        <div className='col xs12 s6 m4' key={mobilesArr._id}>
+        <div className='col l4 xs12 s12 m4' key={mobilesArr._id}>
           <MobileItem
                 _id= {mobilesArr._id}
                 model={mobilesArr.model}
                 weight={mobilesArr.weight}
+                os={mobilesArr.os}
                 internalmemory={mobilesArr.internalmemory}
                 ram={mobilesArr.ram}
                 camera={mobilesArr.camera}
