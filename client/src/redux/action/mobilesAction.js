@@ -2,7 +2,7 @@ import axios from 'axios';
 
 export function getMobiles(){
   return function(dispatch){
-    axios.get("http://localhost:3001/mobiles")
+    axios.get("/mobiles")
       .then(function(response){
         dispatch({type:"GET_MOBILES", payload:response.data})
       })
